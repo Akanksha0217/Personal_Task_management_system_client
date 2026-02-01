@@ -1,0 +1,180 @@
+/* PAGE BACKGROUND */
+.task-list-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  animation: fadeIn 0.8s ease;
+}
+
+/* TITLE */
+.task-list-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.filters select {
+  padding: 10px 14px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background: rgba(201, 196, 196, 0.15);
+  color: #e9b6f7;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.filters select:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+.filters input[type="date"] {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.filters input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); 
+  cursor: pointer;
+}
+
+ 
+/* TABLE */
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(14px);
+  border-radius: 16px;
+  overflow: hidden;
+  animation: slideUp 0.8s ease;
+}
+
+.task-table thead {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.task-table th,
+.task-table td {
+  padding: 14px;
+  text-align: center;
+}
+
+.task-table th {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.task-table tbody tr {
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.task-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.01);
+}
+
+/* INPUTS INSIDE TABLE */
+.task-table input,
+.task-table select {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ACTION BUTTONS */
+.task-table button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  transition: transform 0.25s ease, color 0.25s ease;
+  margin: 0 4px;
+}
+
+.task-table button:hover {
+  transform: scale(1.2);
+}
+
+/* ICON COLORS */
+.task-table button svg.fa-pen {
+  color: #00e5ff;
+}
+
+.task-table button svg.fa-save {
+  color: #00ff9d;
+}
+
+.task-table button svg.fa-times {
+  color: #ff6b6b;
+}
+
+.task-table button svg.fa-trash {
+  color: #ff3d3d;
+}
+
+/* STATUS DROPDOWN */
+.task-table td select {
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* LOADING */
+.loading {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 20px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .task-table {
+    font-size: 13px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: center;
+  }
+}

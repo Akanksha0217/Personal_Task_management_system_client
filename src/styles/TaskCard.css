@@ -1,0 +1,70 @@
+/* Card styling */
+.task_con
+ {
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background: linear-gradient(135deg, #f6d365, #fda085); /* soft gradient */
+  color: #333; /* text color */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Hover effect */
+.task-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Badges */
+.badge-high {
+  background: #ff6b6b; /* red */
+  color: white;
+}
+.badge-medium {
+  background: #feca57; /* orange */
+  color: black;
+}
+.badge-low {
+  background: #1dd1a1; /* green */
+  color: white;
+}
+.badge-category {
+  background: #54a0ff; /* blue */
+  color: white;
+}
+
+/* Buttons */
+.btn-sm {
+  transition: all 0.2s;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-sm:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn-success {
+  background: linear-gradient(90deg, #1dd1a1, #10ac84);
+  border: none;
+  color: white;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #54a0ff, #2e86de);
+  border: none;
+  color: white;
+}
+
+.btn-warning {
+  background: linear-gradient(90deg, #feca57, #ff9f43);
+  border: none;
+  color: black;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #ff6b6b, #ee5253);
+  border: none;
+  color: white;
+}

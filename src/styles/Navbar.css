@@ -1,0 +1,91 @@
+.custom-navbar {
+  height: 65px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #2b1055, #4a00e0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand */
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.brand span {
+  color: #ffd54f;
+}
+
+/* Right section */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* User info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.user-info svg {
+  font-size: 20px;
+}
+
+/* Buttons */
+.nav-btn {
+  padding: 7px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-btn.login {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.nav-btn.login:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-btn.register {
+  background: #ffd54f;
+  color: #2b1055;
+  font-weight: 500;
+}
+
+.nav-btn.register:hover {
+  transform: translateY(-2px);
+}
+
+/* Logout */
+.logout-btn {
+  background: transparent;
+  border: 1px solid #ff6b6b;
+  color: #ff6b6b;
+  padding: 7px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 107, 107, 0.15);
+}

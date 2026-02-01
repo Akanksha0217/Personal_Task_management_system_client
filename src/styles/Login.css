@@ -1,0 +1,108 @@
+/* Page background */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2b1055, #7597de);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glass card */
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
+  color: #fff;
+}
+
+/* Title */
+.login-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.login-subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 0 2px #b39ddb;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+.login-footer {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.login-footer span {
+  color: #ffd54f;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Register text */
+.register-text {
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.register-text span {
+  color: #ffd700;
+  cursor: pointer;
+  font-weight: 600;
+}
