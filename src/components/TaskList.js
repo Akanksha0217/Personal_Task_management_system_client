@@ -37,7 +37,7 @@ const [endDate, setEndDate] = useState("");
       console.error("Error fetching tasks:", error);
       setLoading(false);
     }
-  }, [categoryFilter, statusFilter]);
+  }, [categoryFilter, statusFilter,setLoading]);
 
   useEffect(() => {
     fetchTasks();
