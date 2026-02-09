@@ -12,7 +12,9 @@ const TaskList = () => {
   const [startDate, setStartDate] = useState("");
 const [endDate, setEndDate] = useState("");
 
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  const [setLoading] = useState(false);
+
 
   // 🔹 Edit state
   const [editId, setEditId] = useState(null);
