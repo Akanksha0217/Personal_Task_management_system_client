@@ -116,6 +116,7 @@ const [endDate, setEndDate] = useState("");
     
     <div className="task-list-container">
       <h1>My Tasks</h1>
+      {loading && <p>Loading tasks...</p>}
       {/* Filters */} <div className="filters"> <select value={categoryFilter} onChange={(e) => setCategoryFilter(e.target.value)} > <option value="">All Categories</option> <option value="Work">Work</option> <option value="Personal">Personal</option> <option value="Urgent">Urgent</option> </select> <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)} > <option value="">All Status</option> <option value="Pending">Pending</option> <option value="In Progress">In Progress</option> <option value="Completed">Completed</option> </select> 
         {/* Due Date From */}
   <input
